@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+
+:root {
+    /* primary palette */
+    --primary-color: #274e89;
+    --primary-color: #fefefe;
+    --secondary-color: #b16565;
+    --secondary-color: #e5e5e5;
+    --primary-text: #347;
+    --primary-text: #444;
+    --light-text: #7ef;
+
+    --anton: 'Anton', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
+    font-family: var(--poppins);
+}
+
+header {
+    background: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: var(--poppins);
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+header span {
+    border-bottom: 2px solid;
+    color:#444;
+    width: 80%;
+    height: 4px;
+}
+
+header i {
+    font-size: 3rem;
+}
+header a {
+    font-family: var(--anton);
+    text-decoration: none;
+    color: var(--light-text);
+    margin-right: 5%;
+}
+
+header nav {
+    flex: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 10%;
+    
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    background-image: url('../images/portraits/profile_picture.JPG');
+    background-repeat: no-repeat;
+    background-size: 230%;
+    background-position: 55% 35%;
+}
+
+.profile-image img {
+    /* position: absolute; */
+    max-height: 100%;
+}
+
+.profile span {
+    border-bottom: 3px solid #274e89;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: var(--primary-color);
+}
+
+main {
+    font-size: small;
+}
+
+section {
+    padding: 1rem;
+    text-align: center; 
+}
+
+.spacer {
+    aspect-ratio: 900/20;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-image: url('../images/annie-spratt-s1N_aVIviqA-unsplash.jpg'); */
+}
+
+.hero {
+    background: var(--primary-color);
+
+    padding: 0;
+}
+
+
+.layer1 {
+    background-image: url('../images/spacers/peaks-07.svg');
+}
+.layer1 {
+    background-image: url('../images/spacers/peaks-07.svg');
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+
+.sections {
+    width: 100%;
+}
+
+/* TIMELINE NAVIGATION */
+.timeline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.timeline-nav {
+    flex: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.timeline-nav-item {
+    position: sticky;
+}
+
+/* WORKS SECTION */
+.work {
+    padding: 2rem 4rem
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 1em;
+    width: 20%;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--primary-color);
+    box-shadow: 1px 3px .25rem rgba(0, 0, 0, 0.25);
+}
+
+.project-img {
+    overflow: hidden;
+    position: relative;
+}
+
+.card h3 {
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    font-size: 2em;
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.card p {
+    padding: 0.5em;
+}
+
+.project-img img {
+    width: 100%;
+}
+
+/* Simple Overlay Hover Effect credits: Arnaud Balland */
+/* https://codepen.io/ArnaudBalland/pen/vGZKLr */
+.overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    /* left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; */
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+.project-img:hover .overlay {
+    opacity: 1;
+}
+
+.fadeIn-top{
+    top: 20%;
+}
+
+
+/* CONTACT SECTION */
+.contact {
+    background: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size:48px;
+    }
+    .profile {
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+
+    .profile-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .timeline {
+        flex-direction: column;
+    }
+    .timeline-nav {
+        flex-direction: row;
+    }
+
+    .card {
+        width: 95%;
+    }
+    
+}
