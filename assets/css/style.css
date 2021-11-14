@@ -3,13 +3,14 @@
 
 :root {
     /* primary palette */
-    --primary-color: #274e89;
+    /* --primary-color: #274e89; */
     --primary-color: #fefefe;
-    --secondary-color: #b16565;
+    /* --secondary-color: #b16565; */
     --secondary-color: #e5e5e5;
-    --primary-text: #347;
+    /* --primary-text: #347; */
     --primary-text: #444;
-    --light-text: #7ef;
+    /* --light-text: #7ef; */
+    --light-text: #d74533;
 
     --anton: 'Anton', sans-serif;
     --poppins: 'Poppins', sans-serif;
@@ -29,18 +30,49 @@ body {
 }
 
 header {
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
+    background-image: 
+        linear-gradient(
+            145deg, 
+            rgba(255, 255, 0, 0.1) 40%, 
+            rgba(255, 166, 0, 0.2) 50%,
+            rgba(255, 0, 0, 0.3) 70%,
+            rgba(149, 0, 149, 0.2)),
+            url('../images/annie-spratt-s1N_aVIviqA-unsplash.jpg');
+        
+    /* background: var(--secondary-color); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 0;
     padding: 1rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
+    z-index: 9999;
 }
 
+
+
 header h1 {
+    color: var(--light-text);
+    background: var(--primary-color);
+    /* background: linear-gradient(to right, #fffc, #fffa); */
+    /* backdrop-filter: blur(4px);  */
+    border-radius: 2.4em;
+    padding: .3em;
+    padding: .8em 1em;
+    text-align: center;
     font-family: var(--poppins);
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-style: bold;
     margin-left: 2rem;
+    text-shadow:  0 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px rgba(0, 0, 0, 0.25);
 }
 
 header span {
@@ -50,14 +82,28 @@ header span {
     height: 4px;
 }
 
+/* placeholder icon */
+/* disabled */
 header i {
     font-size: 3rem;
 }
+
 header a {
+    padding: .8em 1em;
     font-family: var(--anton);
     text-decoration: none;
-    color: var(--light-text);
+    color: #fff;
     margin-right: 5%;
+    text-shadow: 0 3px rgba(0, 0, 0, 0.25);
+}
+
+header a:hover {
+    background: var(--primary-color);
+    border-radius: 2.4em;
+    color: var(--light-text);
+    text-shadow: none;
+    box-shadow: 0 3px rgb(0 0 0 / 25%);
+
 }
 
 header nav {
@@ -78,12 +124,13 @@ header nav {
 .profile-image {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 100%;
     /* overflow: hidden; */
     background-image: url('../images/portraits/profile_picture.JPG');
     background-repeat: no-repeat;
     background-size: 230%;
     background-position: 55% 35%;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.25);
 }
 
 .profile-image img {
@@ -106,10 +153,20 @@ main {
 }
 
 section {
-    padding: 1rem;
+    padding: 2rem 4rem;
     text-align: center; 
+    /* TODO: adjust section header based on vp size */
 }
 
+.flex-row {
+    border-bottom: 4px solid;
+    border-color: #fefefe;
+    width: 50%;
+    margin: 0 auto 1.5em;
+
+}
+
+/* TODO: remove section spacers */
 .spacer {
     aspect-ratio: 900/20;
     min-width: 100%;
@@ -120,9 +177,26 @@ section {
 }
 
 .hero {
+    /* TODO: add bg image */
     background: var(--primary-color);
+    background-image: url('../images/portraits/profile_picture.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
-    padding: 0;
+.hero h2 {
+    text-align: right;
+    width: 35%;
+    display: inline;
+}
+
+.hero-text {
+    text-align: left;
+    width: 45%;
 }
 
 
@@ -141,6 +215,7 @@ section {
 .sections {
     width: 100%;
 }
+
 
 /* TIMELINE NAVIGATION */
 .timeline {
@@ -162,9 +237,7 @@ section {
 }
 
 /* WORKS SECTION */
-.work {
-    padding: 2rem 4rem
-}
+
 
 .cards {
     display: flex;
@@ -174,20 +247,38 @@ section {
     justify-content: space-around;
 }
 
+/* TODO: make first card larger */
+/* fix max width of nth-child(:first-child) */
 .card {
     margin: 1em;
-    width: 20%;
+    flex: 25%;
     border-radius: 1em;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     overflow: hidden;
     background: var(--primary-color);
     box-shadow: 1px 3px .25rem rgba(0, 0, 0, 0.25);
+
+    /* from DevTools */
+    height: 250px;
+    /* height: 500px; */
+    flex: 25%;
+    flex-direction: row;
+}
+
+.card:first-child {
+    flex: 45%;
 }
 
 .project-img {
     overflow: hidden;
     position: relative;
+
+    /* from DevTools */
+    overflow: hidden;
+    position: relative;
+    flex: 2 0 45%;
+    height: 100%;
 }
 
 .card h3 {
@@ -205,6 +296,10 @@ section {
 
 .project-img img {
     width: 100%;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Simple Overlay Hover Effect credits: Arnaud Balland */
@@ -213,6 +308,8 @@ section {
     background: rgba(0,0,0,0.7);
     position: absolute;
     height: 99%;
+    /* for row flex */
+    height: 100%;
     width: 100%;
     /* left: 0;
     top: 0;
@@ -238,33 +335,91 @@ section {
     background: var(--primary-color);
 }
 
+.contact a {
+    /* TODO: style link font/color */
+    color: var(--light-text);
+}
+
+
+/* RESUME SECTION */
+.resume a {
+    color: var(--primary-color);
+    /* make CTA a button */
+}
+
+
 @media screen and (max-width: 768px) {
+
     header {
         flex-direction: column;
+        text-align: center;
     }
-
+    
     header h1 {
-        font-size:48px;
+        font-size: 3em;
     }
     .profile {
         flex-direction: column;
-        margin: 2rem auto;
+        margin: 2em auto;
     }
-
+    
     .profile-image {
         width: 400px;
         height: 400px;
+        margin-bottom: 1.5em;
+   
     }
-
-    .timeline {
+    header nav {
         flex-direction: column;
-    }
-    .timeline-nav {
-        flex-direction: row;
+        justify-content: center;
+        align-content: center;
     }
 
+    header a {
+        margin-bottom: 1.5em;
+        font-size: 1.6em;
+    }
+
+    section {
+        font-size: 1.3rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text,
+    .hero h2 {
+        text-align: center;
+    }
+
+
+    .cards {
+        margin: 2em -3em;
+    }
     .card {
-        width: 95%;
+        flex: 40%;
+        font-size: .9em;
+        flex-direction: column;
+        height: auto;
     }
     
+    .card:first-child {
+        flex: 95%;
+               
+    }
+    .card:first-child .project-img {
+        height: 200px;
+        flex: 0 0 300px;
+    }
+    
+    .card-img {
+        width: 100%;
+
+    }
+    .card-img img {
+        object-fit: none;
+    }
+
 }

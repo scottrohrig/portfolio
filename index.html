@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <!-- <div class="overlay"></div> -->
         <div class="profile">
             <div class="profile-image">
                 <!-- <img src="" alt="profile image" /> -->
@@ -19,7 +20,6 @@
             </div>
             <div class="profile-name">
                 <h1>Scott Rohrig</h1>
-                <span></span>
             </div>
         </div>
         <nav>
@@ -29,31 +29,40 @@
             <a href="#resume">resume</a>
         </nav>
     </header>
-    <div class="spacer layer1"></div>
+    <!-- <div class="spacer layer1"></div> -->
     <main>
-        <div class="spacer layer1 flip"></div>
+        <!-- <div class="spacer layer1 flip"></div> -->
         <section class="hero">
             <h2>Are you checking me out?</h2>
-            <p>Well at least buy me a drink first! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, laudantium praesentium natus iste, dolores voluptatem fugit blanditiis eaque nihil eum mollitia assumenda sunt consequatur? Adipisci non expedita corporis delectus odio.</p>
+            <div class="hero-text">
+                <p><i>Well at least buy me a drink first!</i></p>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, laudantium praesentium natus iste, dolores voluptatem fugit blanditiis eaque nihil eum mollitia assumenda sunt consequatur? Adipisci non expedita corporis delectus odio.</p>
+            </div>
         </section>
-        <div class="spacer layer1"></div>
-        <div class="timeline">
+        <!-- <div class="spacer layer1"></div> -->
+        <!-- <div class="timeline">
             <aside class="timeline-nav">
                 <div class="timeline-nav-item">nav-item</div>
                 <div class="timeline-nav-item">nav-item</div>
                 <div class="timeline-nav-item">nav-item</div>
                 <div class="timeline-nav-item">nav-item</div>
-            </aside>
-            <div class="sections">
-                <section id="about">
+            </aside> -->
+        <div class="sections">
+            <section id="about">
+                <div class="flex-row">
                     <h2>about</h2>
-                <p>proficiencies in html, css, javascript, python, pandas, figma, photoshop, etc.</p>
-                <h3>benefits</h3>
-                <p>let me help you grow your team efficiencies</p>
-                <p>pasturize new employees with shredforce on-boarding pathways</p>
+                </div>
+                <div class="about-content">
+                    <h3>benefits</h3>
+                    <p>let me help you grow your team efficiencies</p>
+                    <p>pasturize new employees with shredforce on-boarding pathways</p>
+                    <p>proficiencies in html, css, javascript, python, pandas, figma, photoshop, etc.</p>
+                </div>
             </section>
             <section id="work" class="work">
-                <h2>work</h2>
+                <div class="flex-row">
+                    <h2>work</h2>
+                </div>
                 <div class="cards">
                     <article class="card">
                         <div class="project-img">
@@ -119,11 +128,19 @@
                         </div>
                         <p>Quisquam voluptatum nesciunt maxime dolore perferendis unde temporibus vitae quia eligendi ducimus, enim necessitatibus iste adipisci aliquam fugiat, accusantium neque debitis? Commodi temporibus in, perferendis nulla mollitia laboriosam ab inventore!</p>
                     </article>
+                    <article class="card">
+                        <div class="project-img">
+                            <div class="overlay"></div>
+                            <h3>project title</h3>
+                            <img src="./assets/images/portraits/zhu-yunxiao-8KDdaIN-5os-unsplash.jpg" alt="TBD-img">
+                        </div>
+                        <p>Quisquam voluptatum nesciunt maxime dolore perferendis unde temporibus vitae quia eligendi ducimus, enim necessitatibus iste adipisci aliquam fugiat, accusantium neque debitis? Commodi temporibus in, perferendis nulla mollitia laboriosam ab inventore!</p>
+                    </article>
                 </div>
             </section>
-            <div class="spacer layer1 flip"></div>
+            <!-- <div class="spacer layer1 flip"></div> -->
             <section id="contact" class="contact">
-                <h2>contact</h2>
+                <h2 class="flex-row">contact</h2>
                 <div class="address-card">
                     <p>
                         email: 
@@ -143,42 +160,15 @@
                     </p>
                 </div>
             </section>
-            <div class="spacer layer1"></div>
             <section id="resume" class="resume">
-                <h2>resume</h2>
+                <h2 class="flex-row">resume</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum neque laborum inventore quod nisi amet, dolor fugiat iusto. Est odit dolorum harum accusantium quo qui sit commodi maiores non iusto.</p>
+                <p><a href="">click here to download my resume</a>.</p>
             </section>
         </div>
     </main>
-    <div class="spacer layer1 flip"></div>
-    <section class="contact">
-        <div class="content">
-            <ul class="socials">
-                <li class="social">
-                    <a href="#" target="_blank" class="email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="social">
-                    <a href="#" target="_blank" class="twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="social">
-                    <a href="#" target="_blank" class="linkedin">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="social">
-              <a href="#" target="_blank" class="codepen">
-                  <i class="fa fa-codepen" aria-hidden="true"></i>
-                </a>
-            </li>
-        </ul>
-        <div class="clear"></div>
-    </div>
-</section>
-<footer>
+    <!-- <div class="spacer layer1 flip"></div> -->
+    <footer>
         <h2>footer</h2>
         <p></p>
     </footer>
