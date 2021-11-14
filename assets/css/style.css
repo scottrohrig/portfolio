@@ -5,8 +5,8 @@
     /* primary palette */
     /* --primary-color: #274e89; */
     --primary-color: #fefefe;
-    /* --secondary-color: #b16565; */
-    --secondary-color: #e5e5e5;
+    --secondary-color: #b16565;
+    /* --secondary-color: #e5e5e5; */
     /* --primary-text: #347; */
     --primary-text: #444;
     /* --light-text: #7ef; */
@@ -30,6 +30,7 @@ body {
 }
 
 header {
+    /* TODO: blend header into hero */
     /* background: var(--primary-color); */
     background-image: 
         linear-gradient(
@@ -45,11 +46,9 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    /* position: -webkit-sticky;
-    position: sticky; */
     top: 0;
-    padding: 1rem;
-    display: flex;
+    padding: 1rem 5rem;
+    /* display: flex; */
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
@@ -61,8 +60,9 @@ header {
 header h1 {
     color: var(--light-text);
     background: var(--primary-color);
-    /* background: linear-gradient(to right, #fffc, #fffa); */
-    /* backdrop-filter: blur(4px);  */
+    /* background: linear-gradient(to bottom, #fffe, #fffb); */
+    background: #fffe;
+    backdrop-filter: blur(4px); 
     border-radius: 2.4em;
     padding: .3em;
     padding: .8em 1em;
@@ -71,7 +71,7 @@ header h1 {
     /* font-weight: 500; */
     font-style: bold;
     margin-left: 2rem;
-    text-shadow:  0 3px rgba(0, 0, 0, 0.25);
+    /* text-shadow:  0 3px rgba(0, 0, 0, 0.25); */
     box-shadow: 0 3px rgba(0, 0, 0, 0.25);
 }
 
@@ -92,7 +92,8 @@ header a {
     padding: .8em 1em;
     font-family: var(--anton);
     text-decoration: none;
-    color: #fff;
+    color: var(--primary-text);
+    color: var(--primary-color);
     margin-right: 5%;
     text-shadow: 0 3px rgba(0, 0, 0, 0.25);
 }
@@ -117,11 +118,16 @@ header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 1 10%;
+    /* flex: 1 10%; */
     
 }
 
+/* TODO: [*] => fix image roundness wonkiness  */
+/* TODO: [*] => make image hang over header 50% */
 .profile-image {
+    position: relative;
+    display: inline-flex;
+    top: 50px;
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -136,12 +142,6 @@ header nav {
 .profile-image img {
     /* position: absolute; */
     max-height: 100%;
-}
-
-.profile span {
-    border-bottom: 3px solid #274e89;
-    width: 100%;
-    height: 100%;
 }
 
 footer {
@@ -194,7 +194,7 @@ section {
     display: inline;
 }
 
-.hero-text {
+.hero-content-wrapper {
     text-align: left;
     width: 45%;
 }
@@ -294,6 +294,7 @@ section {
     padding: 0.5em;
 }
 
+/* TODO: add links to projects */
 .project-img img {
     width: 100%;
 
@@ -331,6 +332,10 @@ section {
 
 
 /* CONTACT SECTION */
+/* TODO: COMPLETE CONTACT SECTION */
+/*          [ ] => consider socials icons */
+/*          [ ] => to do... */
+/*          [ ] => ... */
 .contact {
     background: var(--primary-color);
 }
@@ -342,12 +347,19 @@ section {
 
 
 /* RESUME SECTION */
+/* TODO: COMPLETE RESUME SECTION */
 .resume a {
     color: var(--primary-color);
     /* make CTA a button */
 }
 
-
+@media screen and (max-width: 980px) {
+    header {
+        position: relative;
+        padding-bottom: 0;
+        justify-content: center;
+    }    
+}
 @media screen and (max-width: 768px) {
 
     header {
@@ -357,6 +369,8 @@ section {
     
     header h1 {
         font-size: 3em;
+        padding: 0.3em;
+        margin: 0;
     }
     .profile {
         flex-direction: column;
@@ -364,19 +378,23 @@ section {
     }
     
     .profile-image {
+        
+        position: static;
         width: 400px;
         height: 400px;
         margin-bottom: 1.5em;
+        width: 0;
+        height: 0;
    
     }
     header nav {
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-content: center;
     }
 
     header a {
-        margin-bottom: 1.5em;
+        margin-bottom: .5em;
         font-size: 1.6em;
     }
 
