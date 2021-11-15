@@ -23,69 +23,37 @@
     box-shadow: border-box;
 }
 
+
+
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--primary-text);
     font-family: var(--poppins);
 }
 
 header {
     /* TODO: blend header into hero */
-    /* background: var(--primary-color); */
-    background-image: 
-        linear-gradient(
-            145deg, 
-            rgba(255, 255, 0, 0.1) 40%, 
-            rgba(255, 166, 0, 0.2) 50%,
-            rgba(255, 0, 0, 0.3) 70%,
-            rgba(149, 0, 149, 0.2)),
-            url('../images/annie-spratt-s1N_aVIviqA-unsplash.jpg');
-        
-    /* background: var(--secondary-color); */
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    top: 0;
-    padding: 1rem 5rem;
-    /* display: flex; */
-    flex-flow: row wrap;
-    align-items: center;
+    /* TODO:  [*] : clean header and hero */
+    /* TODO:  [*] : fix overflowing elements */
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    height: 60px;
     justify-content: space-between;
-    z-index: 9999;
+
 }
-
-
 
 header h1 {
-    color: var(--light-text);
-    background: var(--primary-color);
-    /* background: linear-gradient(to bottom, #fffe, #fffb); */
-    background: #fffe;
-    backdrop-filter: blur(4px); 
-    border-radius: 2.4em;
-    padding: .3em;
-    padding: .8em 1em;
-    text-align: center;
+    color: var(--primary-text);
     font-family: var(--poppins);
-    /* font-weight: 500; */
-    font-style: bold;
-    margin-left: 2rem;
-    /* text-shadow:  0 3px rgba(0, 0, 0, 0.25); */
-    box-shadow: 0 3px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
 }
 
-header span {
-    border-bottom: 2px solid;
-    color:#444;
-    width: 80%;
-    height: 4px;
-}
-
-/* placeholder icon */
-/* disabled */
-header i {
-    font-size: 3rem;
+header h1::first-letter {
+    font-weight: 100;
+    font-size: 1.5em;
+    color: var(--light-text);
 }
 
 header a {
@@ -93,14 +61,14 @@ header a {
     font-family: var(--anton);
     text-decoration: none;
     color: var(--primary-text);
-    color: var(--primary-color);
     margin-right: 5%;
     text-shadow: 0 3px rgba(0, 0, 0, 0.25);
+    letter-spacing: .2em;
 }
 
 header a:hover {
     background: var(--primary-color);
-    border-radius: 2.4em;
+    border-radius: -.5em;
     color: var(--light-text);
     text-shadow: none;
     box-shadow: 0 3px rgb(0 0 0 / 25%);
@@ -108,40 +76,11 @@ header a:hover {
 }
 
 header nav {
-    flex: 2;
     display: flex;
-    flex-flow: row wrap;
     justify-content: flex-end;
-}
-
-.profile {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-    /* flex: 1 10%; */
-    
-}
-
-/* TODO: [*] => fix image roundness wonkiness  */
-/* TODO: [*] => make image hang over header 50% */
-.profile-image {
-    position: relative;
-    display: inline-flex;
-    top: 50px;
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    /* overflow: hidden; */
-    background-image: url('../images/portraits/profile_picture.JPG');
-    background-repeat: no-repeat;
-    background-size: 230%;
-    background-position: 55% 35%;
-    box-shadow: 0 4px rgba(0, 0, 0, 0.25);
-}
-
-.profile-image img {
-    /* position: absolute; */
-    max-height: 100%;
+    flex-basis: content;
 }
 
 footer {
@@ -155,7 +94,6 @@ main {
 section {
     padding: 2rem 4rem;
     text-align: center; 
-    /* TODO: adjust section header based on vp size */
 }
 
 .flex-row {
@@ -178,25 +116,59 @@ section {
 
 .hero {
     /* TODO: add bg image */
-    background: var(--primary-color);
-    background-image: url('../images/portraits/profile_picture.JPG');
+    background-image: 
+        linear-gradient(
+            145deg, 
+            rgba(255, 255, 0, 0.1) 40%, 
+            rgba(255, 166, 0, 0.2) 50%,
+            rgba(255, 0, 0, 0.3) 70%,
+            rgba(149, 0, 149, 0.2)),
+            url('../images/annie-spratt-s1N_aVIviqA-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 auto;
+    background-position: center;
+    min-height: 280px;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
-.hero h2 {
-    text-align: right;
-    width: 35%;
-    display: inline;
+.hero p {
+    color: var(--light-text);
+    margin-bottom: .5em;
 }
 
 .hero-content-wrapper {
-    text-align: left;
-    width: 45%;
+    background: #fff7;
+    backdrop-filter: blur(1rem);
+    border-radius: 1em;
+    margin: 0 2em;
+    padding: 2em;
+    text-align: right;
+    flex: 2 0 25%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TODO: [*] => fix image roundness wonkiness  */
+/* TODO: [*] => make image hang over header 50% */
+.profile-image {
+    margin: 0 2em;
+    flex: 1 1 45%;
+    max-height: 450px;
+    max-width: 550px;
+    border-radius: 1em;
+    background-image: url('../images/portraits/profile_picture.JPG');
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: 55% 34%;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-image img {
+    max-height: 100%;
 }
 
 
@@ -247,14 +219,12 @@ section {
     justify-content: space-around;
 }
 
-/* TODO: make first card larger */
-/* fix max width of nth-child(:first-child) */
+/* TODO: [*] make first card larger */
 .card {
     margin: 1em;
     flex: 25%;
     border-radius: 1em;
     display: flex;
-    /* flex-direction: column; */
     overflow: hidden;
     background: var(--primary-color);
     box-shadow: 1px 3px .25rem rgba(0, 0, 0, 0.25);
@@ -309,13 +279,8 @@ section {
     background: rgba(0,0,0,0.7);
     position: absolute;
     height: 99%;
-    /* for row flex */
     height: 100%;
     width: 100%;
-    /* left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0; */
     opacity: 0;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
@@ -353,23 +318,26 @@ section {
     /* make CTA a button */
 }
 
-@media screen and (max-width: 980px) {
+/* @media screen and (max-width: 980px) {
     header {
         position: relative;
         padding-bottom: 0;
         justify-content: center;
     }    
-}
+} */
 @media screen and (max-width: 768px) {
 
     header {
         flex-direction: column;
         text-align: center;
+        height: auto;
+        margin: 0;
+        padding: 2rem 0;
     }
     
     header h1 {
         font-size: 3em;
-        padding: 0.3em;
+        /* padding: 0.3em; */
         margin: 0;
     }
     .profile {
@@ -377,47 +345,56 @@ section {
         margin: 2em auto;
     }
     
-    .profile-image {
-        
-        position: static;
-        width: 400px;
-        height: 400px;
-        margin-bottom: 1.5em;
-        width: 0;
-        height: 0;
-   
-    }
     header nav {
-        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
-        align-content: center;
+        align-items: center;
     }
 
     header a {
         margin-bottom: .5em;
         font-size: 1.6em;
     }
-
+    
     section {
         font-size: 1.3rem;
     }
 
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
-
-    .hero-text,
+    
+    .profile-image {
+        
+        /* width: 400px;
+        height: 400px; */
+        margin: 0;
+        width: 65%;
+        height: 300px;
+        object-fit: contain;
+        flex: 1 1 auto;
+        margin-bottom: 1.5em;
+   
+    }
+    
+    .hero-content-wrapper,
     .hero h2 {
         text-align: center;
+        margin: 0;
     }
+
 
 
     .cards {
         margin: 2em -3em;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .card {
-        flex: 40%;
+        flex: 1 1 auto;
+        width: 85%;
         font-size: .9em;
         flex-direction: column;
         height: auto;
