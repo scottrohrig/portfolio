@@ -314,7 +314,7 @@ section {
 /* RESUME SECTION */
 /* TODO: COMPLETE RESUME SECTION */
 .resume a {
-    color: var(--primary-color);
+    color: var(--light-text);
     /* make CTA a button */
 }
 
@@ -376,13 +376,15 @@ section {
         object-fit: contain;
         flex: 1 1 auto;
         margin-bottom: 1.5em;
-   
+        
     }
     
     .hero-content-wrapper,
     .hero h2 {
         text-align: center;
         margin: 0;
+        padding: .3em;
+        /* width: 95%; */
     }
 
 
@@ -415,6 +417,19 @@ section {
     }
     .card-img img {
         object-fit: none;
+    }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    section {
+        padding: .3em .6em;
+    }
+
+    .cards {
+        font-size: 1rem;
     }
 
 }
