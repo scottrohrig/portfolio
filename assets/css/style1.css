@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --dark-p: #333; 
+    --dark-s: #7a7a7a;
+    --p: #784cfb;
+    --light-p: #fff;
+    --light-s: #f9fafb;
+    --bg-light: #f6f7fb; 
+}
+
+
+/* General */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    background: var(--p);
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background: var(---bg-light);
+    overflow: hidden;
+}
+
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links a {
+    /* anchor tags are inline by default ∴ w/h & marginY cannot be set manually */
+    display: inline-block; 
+    padding: 0.9rem 1.2rem;
+    color: var(--dark-p);
+    font-size: 1.05rem;
+    
+}
