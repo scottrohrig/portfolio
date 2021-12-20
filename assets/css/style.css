@@ -247,12 +247,17 @@ header nav .container .links a.active:hover {
 
 .header-content .container.grid-2 .column-2.image {
   position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .header-content .container.grid-2 .column-2.image .profile-blob {
   position: absolute;
-  top: 25%;
-  left: 0;
+  width: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   z-index: -1;
 }
 

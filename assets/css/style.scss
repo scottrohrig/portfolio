@@ -235,10 +235,14 @@ header {
 
     .column-2.image {
         position: relative;
+        overflow: hidden;
+        border-radius: 50%;
         .profile-blob {
             position: absolute;
-            top: 25%;
-            left: 0;
+            width: 90%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
             z-index: -1;
     
         }
