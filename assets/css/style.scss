@@ -221,7 +221,7 @@ header {
 
 .header-content .container.grid-2 {
     grid-template-columns: 2.5fr 3.5fr;
-    min-height: calc(100vh-6rem);
+    min-height: calc(100vh - 6rem);
     padding-bottom: 2.5rem;
     text-align: left;
     .header-title {
@@ -503,4 +503,48 @@ header {
         }
     }
 
+}
+
+// RECORDS
+
+.records {
+    position: relative;
+    background-color: $primary;
+    padding: 5.2rem 0;
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2rem;
+        .wrap {
+            .record-circle {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%; 
+                margin: 0 auto;
+                border: 4px solid $lightOne;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                color: $lightOne;
+                &.active {
+                    background-color: $lightOne;
+                    color: $darkOne;
+                    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.5);
+                }
+                .number {
+                    font-weight: 400;
+                    font-size: 2.35rem;
+                }
+                .sub-title {
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }

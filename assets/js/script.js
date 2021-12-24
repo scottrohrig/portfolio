@@ -1,6 +1,8 @@
 const filterBtns = document.querySelectorAll('.filter-btn');
 const skillsWrap = document.querySelector('.skills');
 const skillsBars = document.querySelectorAll('.skill-progress');
+const recordsWrap = document.querySelector('.records');
+const recordsNums = document.querySelectorAll('.number');
 
 filterBtns.forEach( btn => btn.addEventListener('click', () => {
     filterBtns.forEach( button => button.classList.remove('active'));
@@ -22,6 +24,7 @@ $('.grid').isotope({
 
 window.addEventListener('scroll', () => {
     skillsEffect();
+    countUp();
 })
 
 function checkScroll(el) {
@@ -38,4 +41,9 @@ function checkScroll(el) {
 function skillsEffect() {
     if (!checkScroll(skillsWrap)) return;
     skillsBars.forEach(skill => skill.style.width = skill.dataset.progress)
+}
+
+function countUp() {
+    if (!checkScroll(recordsWrap)) return;
+    console.log('hey records')
 }
