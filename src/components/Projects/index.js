@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  MDBBtn,
   MDBCard
 } from 'mdb-react-ui-kit';
 import logo from '../../assets/images/blobs/1.svg';
@@ -67,7 +66,7 @@ function Projects() {
   return (
     <div className="container-fluid ">
       <div
-        className="row justify-content-center rounded-lg border border-info mx-auto gx-1 projects-hero"
+        className="row justify-content-center  mx-auto gx-1 projects-hero"
         style={ { backgroundImage: `url(${ logo })` } }
       >
 
