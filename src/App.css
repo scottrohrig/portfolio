@@ -1,0 +1,101 @@
+/* custom styling */
+
+
+.content {
+  margin-top: calc(8.9vw);
+}
+
+.poppins {
+  font-family: 'Poppins';
+}
+
+.fw-thick {
+  font-weight: 700;
+}
+
+.rounded-md {
+  border-radius: .5rem;
+}
+
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+.c-primary {
+  color: #4cbbfb;
+}
+
+.nav-sticky {
+  position: fixed;
+  width: 100vw;
+  z-index: +1;
+}
+
+.bg-trans{
+  background: #fff5;
+}
+
+.logo {
+  width: calc(10vw + 50px);
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; */
+}
+.logo img,
+.logo h1 {
+  display: inline;
+  width: 45%;
+}
+
+img{
+  width: 100%;
+}
+
+.hero-img {
+  overflow: hidden;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  border-radius: 50%;
+}
+
+.projects-hero {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.blob {
+  position:absolute;
+  transform: translate(-50%, -45%);
+  width: 120%;
+  top: 50%;
+  left: 50%;
+}
+
+.pfp {
+  z-index: +1;
+}
+
+.btn {
+  border-radius: 2rem;
+  background: #4cbbfb;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  .hero .btn {
+    max-width: 250px;
+  }
+ }
