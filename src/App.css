@@ -83,9 +83,20 @@ img{
   z-index: +1;
 }
 
-.btn {
-  border-radius: 2rem;
-  background: #4cbbfb;
+/* .btn, */
+.btn-primary {
+  border-radius: 2rem !important;
+  background: #4cbbfb !important;
+}
+
+.btn-primary:hover{
+  background-color: #18a0ee !important;
+}
+
+.cardi-img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .min-vh-50 {

@@ -90,7 +90,7 @@ function Projects() {
                   className="bg-image hover-overlay ripple"
                   data-mdb-ripple-color="light"
                 >
-                  <img src={ projectImg } className="img-fluid" alt='' />
+                  <img src={ projectImg } className="img-fluid cardi-img" alt='' />
                   <a href={ project.deployed_url } target="_blank" rel="noreferrer" >
                     <div
                       className="mask"
