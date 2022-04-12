@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.610bd4ce.css",
+    "main.js": "/portfolio/static/js/main.7ae288a4.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/got-hops-demo.gif": "/portfolio/static/media/got-hops-demo.f5f6ddb31c5f9e99c016.gif",
+    "static/media/weather-dashboard.gif": "/portfolio/static/media/weather-dashboard.65d131c564f2844b8efe.gif",
+    "static/media/profile_picture_t.png": "/portfolio/static/media/profile_picture_t.50b70fd3f1acb67cfcce.png",
+    "static/media/resume-mar-22-sm.png": "/portfolio/static/media/resume-mar-22-sm.16ae5e6e6c04a1f28c91.png",
+    "static/media/convo-web.png": "/portfolio/static/media/convo-web.43161feeb0bf1af17e9b.png",
+    "static/media/Resume - Scott Rohrig - Mar 2022.pdf": "/portfolio/static/media/Resume - Scott Rohrig - Mar 2022.697ac85ba011a0479bd8.pdf",
+    "static/media/pw-gen.png": "/portfolio/static/media/pw-gen.7343bdb0c1ed965c2845.png",
+    "static/media/solitaire.png": "/portfolio/static/media/solitaire.95fc9ea12c5e6b3bd46f.png",
+    "static/media/speed-cards.png": "/portfolio/static/media/speed-cards.8925f059d6d6246a6992.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/4.svg": "/portfolio/static/media/4.3345fd5db471529423fc061afed005b4.svg",
+    "static/media/1.svg": "/portfolio/static/media/1.ec35a611c405a1952f06a831b39b9f74.svg",
+    "main.610bd4ce.css.map": "/portfolio/static/css/main.610bd4ce.css.map",
+    "main.7ae288a4.js.map": "/portfolio/static/js/main.7ae288a4.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.610bd4ce.css",
+    "static/js/main.7ae288a4.js"
+  ]
+}
