@@ -16,8 +16,6 @@ function App() {
   ] );
   const [ activeTab, setActiveTab ] = useState( navLinks[ 0 ] );
 
-  console.log( activeTab );
-
   const renderContent = () => {
 
     switch ( activeTab ) {
