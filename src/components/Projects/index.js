@@ -35,39 +35,39 @@ function Projects() {
         "A flashcard app for foundational web development concepts and practices. Compete for the highscore!"
     },
     {
-      title: "tella",
-      gh_url: "https://github.com/scottrohrig/messaging-app",
-      deployed_url: "https://tella.herokuapp.com/",
+      title: "Pass Gen",
+      gh_url: "https://github.com/scottrohrig/password-generator/",
+      deployed_url: "https://scottrohrig.github.io/password-generator/",
       img_src:
-        require( "../../assets/images/projects/convo-web.png" ),
+        require( "../../assets/images/projects/pw-gen.png" ),
       description:
-        "A privacy-based messaging app built with a MySQL database using Model View Controller (MVC) paradigm to focus on connecting with those you love."
+        "Privacy and security are paramount in today's digital world. Easily create passwords on the go with this password generator app."
     },
     {
-      title: "got 🍻 hops",
-      gh_url: "",
-      deployed_url: "https://scottrohrig.github.io/got-hops/",
+      title: "Weather By City",
+      gh_url: "https://github.com/scottrohrig/weather-dashboard",
+      deployed_url: "https://scottrohrig.github.io/weather-dashboard/",
       img_src:
-        require( "../../assets/images/projects/got-hops-demo.gif" ),
+        require( "../../assets/images/projects/weather-dashboard.gif" ),
       description:
-        "The best to find breweries around town! Search and star you favorite breweries. Come back and add more to the list for later. Perfect for planning local nights out or stepping up your travel itinerary while out on holiday."
+        "Looking to travel soon? Get up-to-the-hour weather data for today and the forecast for the next 5 days."
     },
     {
-      title: "Speeducate",
-      gh_url: "",
-      deployed_url: "https://scottrohrig.github.io/speed-cards/",
+      title: "One-Hand Solitaire",
+      gh_url: "https://github.com/scottrohrig/one-hand-solitaire",
+      deployed_url: "https://github.com/scottrohrig/one-hand-solitaire",
       img_src:
-        require( "../../assets/images/projects/speed-cards.png" ),
+        require( "../../assets/images/projects/solitaire.png" ),
       description:
         "A flashcard app for foundational web development concepts and practices. Compete for the highscore!"
     },
   ] );
 
   return (
-    <div className="container-fluid ">
+    <div className="container-fluid rounded-md p-3">
       <div
-        className="row justify-content-center  mx-auto gx-1 projects-hero"
-        style={ { backgroundImage: `url(${ logo })` } }
+        className="row justify-content-center mx-auto gx-1 projects-hero"
+      // style={ { backgroundImage: `url(${ logo })` } }
       >
 
         <div className='  text-reset'>
@@ -78,7 +78,7 @@ function Projects() {
         </div>
 
       </div>
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 m-2 g-4">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-2 g-4 ">
         { projects.map( ( project, i ) => {
 
           const projectImg = project.img_src;
@@ -103,7 +103,7 @@ function Projects() {
                   <h5 className="card-title fw-bolder poppins">
                     { project.title }
                   </h5>
-                  <p className="card-text text-reset">{ project.description }</p>
+                  <p className="card-text scroll-cut fs-r text-reset">{ project.description }</p>
 
                   <a href={ project.gh_url } className="btn btn-primary">
                     browse the code

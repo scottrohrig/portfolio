@@ -93,6 +93,14 @@ img{
   background-color: #18a0ee !important;
 }
 
+.btn-primary:visited {
+  background-color: #20adff;
+}
+
+.bg-main {
+  background-color: #4cbbfb;
+}
+
 .cardi-img {
   aspect-ratio: 4/3;
   object-fit: cover;
@@ -103,10 +111,65 @@ img{
   min-height: 50vh;
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+.collapse:enabled {
+  background-color: aliceblue;
+}
+
+.ftr-sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+.fs-r {
+  font-size: larger;
+}
+
+.resume {
+  width: fit-content;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (min-width: 575.98px) {
+  .fs-r {
+    font-size: medium !important;
+  }
+  .scroll-cut {
+    overflow-y: auto;
+
+  }
+ }
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) {
+  .fs-r {
+    font-size:medium;
+  }
+  .scroll-cut {
+    overflow-y: auto;
+    max-height: 200px;
+  }
+}
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) {
+  .fs-r {
+    font-size:small !important;
+  }
+}
+
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) {
 
   .hero .btn {
     max-width: 250px;
   }
- }
+  .fs-r {
+    font-size: x-small !important;
+  }
+}
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1399.98px) {
+  /* .fs-r {
+    font-size: x-small !important;
+  } */
+}

@@ -22,7 +22,7 @@ function App() {
 
     switch ( activeTab ) {
       case navLinks[ 0 ].name:
-        return ( <About /> );
+        return ( <About setActiveTab={ setActiveTab } /> );
       case navLinks[ 1 ].name:
         return ( <Projects /> );
       case navLinks[ 2 ].name:

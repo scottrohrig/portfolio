@@ -2,7 +2,11 @@ import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import logo from '../../assets/images/blobs/4.svg';
 
-function About() {
+function About( props ) {
+  const {
+    setActiveTab,
+  } = props;
+
   return (
     <div className="container-fluid hero">
       <div className="row">
@@ -13,7 +17,9 @@ function About() {
             Hi! I'm Scott Rohrig, a full stack developer based out of Oakland,
             CA. Nutella vitae elit libero, a pharetra augue mollis interdum.
           </p>
-          <MDBBtn href="#" className="fw-bold fs-6">
+          <MDBBtn onClick={()=>{
+            setActiveTab('resume')
+          }} className="fw-bold fs-6">
             download CV
           </MDBBtn>
 

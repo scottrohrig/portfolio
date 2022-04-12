@@ -20,7 +20,7 @@ function Header( props ) {
     <header className='position-relative'>
       <MDBNavbar expand="lg" light className="fixed-top shadow-none bg-trans">
         <MDBContainer fluid className='mx-3'>
-          <MDBNavbarBrand href='#'>
+          <MDBNavbarBrand href='#' onClick={ () => { setActiveTab( 'about' ); } }>
             <MDBRipple rippleTag='div' className='rounded-pill bg-image logo'>
               <img src={ logo } alt="" className='logo-blob' />
               <h1 className='poppins c-primary fw-thick text-uppercase'>sr</h1>

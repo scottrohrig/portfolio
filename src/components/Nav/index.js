@@ -36,13 +36,13 @@ function Nav( props ) {
       <MDBCollapse navbar show={ showNavToggler }>
         <MDBNavbarNav className="justify-content-lg-end text-end mr-auto mb-2 mb-lg-0">
           <MDBNavbarItem>
-            <MDBNavbarLink active aria-current="page" href="#">
+            <MDBNavbarLink active aria-current="page" href='#' onClick={ () => { setActiveTab( 'about' ); } }>
               Home
             </MDBNavbarLink>
           </MDBNavbarItem>
           { navLinks.map( ( navLink ) => {
             const NavLink = ( navLink.name === 'contact' )
-              ? <MDBBtn size='sm'>{ navLink.name }</MDBBtn>
+              ? <MDBBtn href={ '#' + navLink.name } size='sm'>{ navLink.name }</MDBBtn>
               : <MDBNavbarLink
                 href={ "#" + navLink.name }
                 className={ `text-capitalize ${ activeTab === navLink.name && "active"
