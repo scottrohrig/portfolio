@@ -4,7 +4,7 @@ Howdy! I'm web developer, designer and artist. Checkout [my work](scottrohrig.co
 
 ## Website
 
-Check out [my portfolio hosted on GitHub](https://scottrohrig.github.io/portfolio/) \
+ [![Preview](./src/assets/images/preview.png)Check out my portfolio hosted on GitHub](https://scottrohrig.github.io/portfolio/) \
 Or visit my [personal website](http://scottrohrig.com)
 
 ## Tools
