@@ -8,6 +8,15 @@ function Projects() {
 
   const [ projects ] = useState( [
     {
+      title: "Happy Harvesters",
+      gh_url: "https://github.com/scottrohrig/apple-orchard-games",
+      deployed_url: "https://happy-harvesters.herokuapp.com/",
+      img_src:
+        require( "../../assets/images/projects/orchard-shop.png" ),
+      description:
+        "A happy little orchard where you can race to see who gets the most apples. Sell your apples for money to get the high score, in this single page web application. Install the app locally as a progressive web app and keep harvesting!"
+    },
+    {
       title: "tella",
       gh_url: "https://github.com/scottrohrig/messaging-app",
       deployed_url: "https://tella.herokuapp.com/",
