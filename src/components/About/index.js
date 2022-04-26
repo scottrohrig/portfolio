@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBBtn } from 'mdb-react-ui-kit';
 import logo from '../../assets/images/blobs/4.svg';
 
-function About( {setActiveTab} ) {
+function About( { setActiveTab } ) {
 
 
 
@@ -15,10 +15,6 @@ function About( {setActiveTab} ) {
           <p>
             Hi! I'm Scott Rohrig, a full stack software engineering graduate from UC Berkeley coding bootcamp.
 
-            Enthusiastically pursuing
-
-            Committed to a
-
             Proficient in mobile and desktop development environments.
 
             Adept at JavaScript, Python and other programming languages to produce clean code.
@@ -26,6 +22,10 @@ function About( {setActiveTab} ) {
             Versatile back-end knowledge, able to work across multiple types of database management systems.
 
             Well-organized and collaborative team player with strong communication and analytical abilities.
+
+            {/* Passionate about education and making an impact.  */ }
+            {/* Committed to a ... */ }
+            {/* Enthusiastically pursuing ... */ }
 
             Complex problem-solver with analytical and driven mindset.
 
