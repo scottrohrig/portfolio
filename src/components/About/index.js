@@ -9,7 +9,7 @@ function About( props ) {
 
   return (
     <div className="container-fluid hero">
-      <div className="row">
+      <div className="row justify-content-center">
 
         <div className='col col-md-5 order-2 order-md-1  d-flex flex-column align-self-center  text-md-start mx-5 text-reset'>
           <h2 className='text-capitalize fw-bolder poppins'>scott rohrig</h2>
@@ -17,10 +17,10 @@ function About( props ) {
             Hi! I'm Scott Rohrig, a full stack developer based out of Oakland,
             CA. Nutella vitae elit libero, a pharetra augue mollis interdum.
           </p>
-          <MDBBtn onClick={()=>{
-            setActiveTab('resume')
-          }} className="fw-bold fs-6">
-            download CV
+          <MDBBtn onClick={ () => {
+            setActiveTab( 'resume' );
+          } } className="fw-bold fs-6">
+            Download Resume
           </MDBBtn>
 
         </div>
