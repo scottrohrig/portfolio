@@ -41,6 +41,7 @@ function Nav( props ) {
             </MDBNavbarLink>
           </MDBNavbarItem>
           { navLinks.map( ( navLink ) => {
+            if (navLink.name === 'about me') return <div key={navLink.name}></div >
             const NavLink = ( navLink.name === 'contact' )
               ? <MDBBtn href={ '#' + navLink.name } size='sm'>{ navLink.name }</MDBBtn>
               : <MDBNavbarLink

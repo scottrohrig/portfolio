@@ -11,11 +11,15 @@ function Resume() {
         <div className='mx-auto text-reset'>
           <h2 className='d-lg-none text-capitalize fw-bolder text-white poppins'>Resume</h2>
           <div className='h-25 w-fit mx-auto mb-3'>
-            <img src={ resumeImg } className='w-75 rounded-3' />
+            <img src={ resumeImg } className='w-75 border-top border-start border-end border-white rounded-3' />
           </div>
-          <MDBBtn href={ resume } download className="fw-bold bg-light text-reset fs-6">
-            Download Resume
-          </MDBBtn>
+          <a
+            href={ resume }
+            target='_blank'
+            className='btn bg-light rounded-pill fs-6 fw-bold'>
+            Resume
+          </a>
+
 
         </div>
       </div>

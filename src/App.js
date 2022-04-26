@@ -14,7 +14,7 @@ function App() {
     { name: 'resume' },
     { name: 'contact' }
   ] );
-  const [ activeTab, setActiveTab ] = useState( navLinks[ 0 ] );
+  const [ activeTab, setActiveTab ] = useState(  'about me' );
 
   const renderContent = () => {
 
@@ -28,7 +28,7 @@ function App() {
       case navLinks[ 3 ].name:
         return <Contact />;
       default:
-        return <About />;
+        return ( <About setActiveTab={ setActiveTab } /> );
     }
   };
 
