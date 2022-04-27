@@ -1,5 +1,4 @@
 import React from 'react';
-import { MDBBtn } from 'mdb-react-ui-kit';
 import resumeImg from '../../assets/images/resume-apr-22-sm.png';
 import resume from '../../assets/Resume - Scott Rohrig - Apr 2022.pdf';
 
@@ -11,11 +10,12 @@ function Resume() {
         <div className='mx-auto text-reset'>
           <h2 className='d-lg-none text-capitalize fw-bolder text-white poppins'>Resume</h2>
           <div className='h-25 w-fit mx-auto mb-3'>
-            <img src={ resumeImg } className='w-75 border-top border-start border-end border-white rounded-3' />
+            <img src={ resumeImg } alt='resume' className='w-75 border-top border-start border-end border-white rounded-3' />
           </div>
           <a
             href={ resume }
             target='_blank'
+            rel="noopener noreferrer"
             className='btn bg-light rounded-pill fs-6 fw-bold'>
             Resume
           </a>
