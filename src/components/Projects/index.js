@@ -62,13 +62,22 @@ function Projects() {
         "Looking to travel soon? Get up-to-the-hour weather data for today and the forecast for the next 5 days."
     },
     {
+      title: "Dragon Ball Mini",
+      gh_url: "https://sco-otr.itch.io/dragonball-mini",
+      deployed_url: "https://sco-otr.itch.io/dragonball-mini",
+      img_src:
+        require( "../../assets/images/projects/dragon-ball-mini-preview.gif" ),
+      description:
+        "A small demo project exploring the Godot game engine. Features include abstract base classes, entity inheritance, vector-based movement, stat management, global singletons, finite state machine, observer pattern, and more!"
+    },
+    {
       title: "One-Hand Solitaire",
       gh_url: "https://github.com/scottrohrig/one-hand-solitaire",
       deployed_url: "https://github.com/scottrohrig/one-hand-solitaire",
       img_src:
         require( "../../assets/images/projects/solitaire.png" ),
       description:
-        "A flashcard app for foundational web development concepts and practices. Compete for the highscore!"
+        "A project created in an afternoon dedicated to exploring the Godot engine's control nodes. Built entirely using control nodes and the editor's built-in theme editor. Clone the repository and add the project to your Godot library to run this application."
     },
   ] );
 
