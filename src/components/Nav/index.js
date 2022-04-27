@@ -1,6 +1,4 @@
-// https://www.w3.org/TR/SVG2/
-// https://www.blobmaker.app/
-import React, { useState } from 'react';
+import React from 'react';
 import {
   MDBNavbarToggler,
   MDBNavbarItem,
@@ -17,9 +15,9 @@ function Nav( props ) {
     navLinks = [],
     activeTab,
     setActiveTab,
+    showNavToggler,
+    setShowNavToggler,
   } = props;
-
-  const [ showNavToggler, setShowNavToggler ] = useState( false );
 
   return (
     <>
@@ -36,12 +34,10 @@ function Nav( props ) {
       <MDBCollapse navbar show={ showNavToggler }>
         <MDBNavbarNav className="justify-content-lg-end text-end mr-auto mb-2 mb-lg-0">
           <MDBNavbarItem>
-            <MDBNavbarLink active aria-current="page" href='#' onClick={ () => { setActiveTab( 'about' ); } }>
-              Home
-            </MDBNavbarLink>
+
           </MDBNavbarItem>
           { navLinks.map( ( navLink ) => {
-            if (navLink.name === 'about me') return <div key={navLink.name}></div >
+
             const NavLink = ( navLink.name === 'contact' )
               ? <MDBBtn href={ '#' + navLink.name } size='sm'>{ navLink.name }</MDBBtn>
               : <MDBNavbarLink
@@ -51,7 +47,6 @@ function Nav( props ) {
                 onClick={ () => {
                   setActiveTab( navLink.name );
                   setShowNavToggler( false );
-                  // setProjectsSelected(navLink.name === "portfolio");
                 } }
               >
                 { navLink.name }
