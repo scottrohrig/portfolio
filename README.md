@@ -44,6 +44,12 @@ Here's a sample of some of my latest projects
 - [got 🍻 hops](https://scottrohrig.github.io/got-hops/) | [repository](https://github.com/scottrohrig/got-hops)
 - [One-Hand Solitaire (Godot)](https://github.com/scottrohrig/one-hand-solitaire) | [repository](https://github.com/scottrohrig/one-hand-solitaire)
 
+And check out some of my fiddling
+
+- [Calculator - Vanilla JS](https://jsfiddle.net/scottrohrig/16nhorgs/154/)
+- [Enter vs Shift+Enter](https://jsfiddle.net/scottrohrig/ae1sqxp5/88/)
+- [Interested in AI? Chat with OpenAI](https://github.com/scottrohrig/openai-chat-page)
+
 ## Built With
 ![react](https://img.shields.io/badge/-react-61DAFB?logo=react&logoColor=white&logoWidth=30)
 
