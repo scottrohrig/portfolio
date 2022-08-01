@@ -35,23 +35,32 @@ function Projects() {
         "The best to find breweries around town! Search and star you favorite breweries. Come back and add more to the list for later. Perfect for planning local nights out or stepping up your travel itinerary while out on holiday."
     },
     {
+      title: "OpenAi Query",
+      gh_url: "https://github.com/scott.rohrig/openai-chat-page",
+      deployed_url: "https://github.com/scott.rohrig/openai-chat-page",
+      img_src:
+        "https://camo.githubusercontent.com/89f736cc3a0a86eb45d2663a44326133449967891b3b1f357ff810b53a72a25e/68747470733a2f2f6d656469612e646973636f72646170702e6e65742f6174746163686d656e74732f3537343638303830373235363438393939312f3938363338313835343634353035393731342f756e6b6e6f776e2e706e673f77696474683d343339266865696768743d343638",
+      description:
+        "What if Kermit the frog was in Blade (1998)?"
+    },
+    {
       title: "Speeducate",
-      gh_url: "",
+      gh_url: "https://github.com/scott.rohrig/",
       deployed_url: "https://scottrohrig.github.io/speed-cards/",
       img_src:
         require( "../../assets/images/projects/speed-cards.png" ),
       description:
         "A flashcard app for foundational web development concepts and practices. Compete for the highscore!"
     },
-    {
-      title: "Pass Gen",
-      gh_url: "https://github.com/scottrohrig/password-generator/",
-      deployed_url: "https://scottrohrig.github.io/password-generator/",
-      img_src:
-        require( "../../assets/images/projects/pw-gen.png" ),
-      description:
-        "Privacy and security are paramount in today's digital world. Easily create passwords on the go with this password generator app."
-    },
+    // {
+    //   title: "Pass Gen",
+    //   gh_url: "https://github.com/scottrohrig/password-generator/",
+    //   deployed_url: "https://scottrohrig.github.io/password-generator/",
+    //   img_src:
+    //     require( "../../assets/images/projects/pw-gen.png" ),
+    //   description:
+    //     "Privacy and security are paramount in today's digital world. Easily create passwords on the go with this password generator app."
+    // },
     {
       title: "Weather By City",
       gh_url: "https://github.com/scottrohrig/weather-dashboard",
